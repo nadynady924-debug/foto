@@ -318,32 +318,6 @@
     .committee-grid{ grid-template-columns:1fr; gap:0; }
   }
 
-  /* ---------- presentation event section ---------- */
-  .event-pres{ padding:110px 0; background: var(--bg-2); position:relative; overflow:hidden; }
-  .event-pres::before, .event-pres::after{ content:""; position:absolute; left:0; right:0; height:1px; background:var(--line); }
-  .event-pres::before{ top:0; } .event-pres::after{ bottom:0; }
-  .event-pres-inner{ display:grid; grid-template-columns:1fr 1fr; gap:70px; align-items:center; }
-  .event-pres-text .eyebrow{ margin-bottom:18px; }
-  .event-pres-text h2{ font-family:var(--serif-display); font-weight:400; font-size:clamp(28px,3.8vw,42px); color:var(--ink); margin-bottom:20px; line-height:1.25; }
-  .event-pres-text p{ color:rgba(242,233,215,.72); font-size:16px; line-height:1.75; margin-bottom:14px; }
-  .event-pres-text p:last-of-type{ margin-bottom:0; }
-  .event-date-block{ display:flex; flex-direction:column; gap:0; }
-  .event-date-box{ background:var(--bg-3); border:1px solid var(--line); padding:36px 44px; text-align:center; position:relative; }
-  .event-date-box .day{ font-family:var(--serif-display); font-size:clamp(64px,8vw,96px); color:var(--gold); line-height:1; }
-  .event-date-box .month{ font-family:var(--sans); font-size:15px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-dim); margin-top:6px; font-weight:600; }
-  .event-date-box .year{ font-family:var(--sans); font-size:13px; letter-spacing:.1em; color:rgba(242,233,215,.4); margin-top:4px; }
-  .event-time-box{ background:var(--gold); padding:18px 44px; text-align:center; }
-  .event-time-box .time{ font-family:var(--serif-display); font-size:32px; color:var(--ink-dark); }
-  .event-time-box .place{ font-family:var(--sans); font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-dark); margin-top:4px; font-weight:600; opacity:.8; }
-  .event-tags{ display:flex; gap:10px; flex-wrap:wrap; margin-top:28px; }
-  .event-tag{ font-family:var(--sans); font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--gold-light); border:1px solid var(--line); padding:7px 14px; border-radius:2px; font-weight:600; }
-  @media (max-width:880px){
-    .event-pres-inner{ grid-template-columns:1fr; gap:44px; }
-    .event-date-block{ flex-direction:row; max-width:320px; }
-    .event-date-box{ flex:1; }
-    .event-time-box{ flex:0 0 160px; display:flex; flex-direction:column; justify-content:center; }
-  }
-
   .cta-final{ padding:120px 0; text-align:center; position:relative; }
   .cta-final h2{ font-family: var(--serif-display); font-weight:400; font-size: clamp(32px,5vw,56px); color:var(--ink); max-width:760px; margin:0 auto 20px; line-height:1.2; }
   .cta-final p{ color:rgba(242,233,215,.68); font-size:17px; max-width:520px; margin:0 auto 40px; }
@@ -422,7 +396,6 @@
       <a href="javascript:void(0)" onclick="nav('home','who')">Условия</a>
       <a href="javascript:void(0)" onclick="nav('home','video-req')">Видео-визитка</a>
       <a href="javascript:void(0)" onclick="nav('home','committee')">Комитет</a>
-      <a href="javascript:void(0)" onclick="nav('event')">2 октября</a>
       <a href="javascript:void(0)" onclick="nav('polozhenie')">Положение</a>
     </nav>
     <div class="nav-cta">
@@ -654,40 +627,6 @@
   </div>
 </section>
 
-<!-- ============ PRESENTATION EVENT ============ -->
-<section class="event-pres" id="presentation">
-  <div class="wrap">
-    <div class="event-pres-inner">
-      <div class="event-pres-text reveal">
-        <div class="eyebrow">Закрытое мероприятие</div>
-        <h2>Закрытая презентация премии «Женщина в деле»</h2>
-        <p>Первыми узнайте всё о программе премии, номинациях и условиях участия — в кругу единомышленниц и организаторов. Встреча для тех, кто хочет подать заявку осознанно.</p>
-        <p>На презентации: обзор всех 10 номинаций и Гран-при, анонс фотовыставки «Женщина в деле», ответы на вопросы от организаторов и нетворкинг с предпринимательницами региона.</p>
-        <div class="event-tags">
-          <span class="event-tag">Закрытый формат</span>
-          <span class="event-tag">Только по регистрации</span>
-          <span class="event-tag">Бесплатно</span>
-        </div>
-        <div style="margin-top:32px;">
-          <a href="javascript:void(0)" onclick="nav('event')" class="btn btn-primary">Зарегистрироваться</a>
-        </div>
-      </div>
-      <div class="reveal">
-        <div class="event-date-block">
-          <div class="event-date-box">
-            <div class="day">2</div>
-            <div class="month">Октября</div>
-            <div class="year">2026</div>
-          </div>
-          <div class="event-time-box">
-            <div class="time">18:00</div>
-            <div class="place">МКЦ ТПУ</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ============ FINAL CTA ============ -->
 <section class="cta-final" id="cta">
@@ -760,95 +699,6 @@
     <p>Вопросы по премии — <a href="mailto:womencomitettpp70@yandex.ru">womencomitettpp70@yandex.ru</a> &middot; +7 913 824 09 91</p>
   </div>
 </footer>
-
-</div>
-
-<!-- ============ VIEW: 2 ОКТЯБРЯ ============ -->
-<div id="view-event" class="page-view">
-
-<section style="padding:80px 0 120px; min-height:100vh; background:var(--bg);">
-  <div class="wrap" style="max-width:820px;">
-
-    <a href="javascript:void(0)" onclick="nav('home')" style="display:inline-flex; align-items:center; gap:8px; font-family:var(--sans); font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-dim); margin-bottom:50px;">&larr;&nbsp; На главную</a>
-
-    <!-- eyebrow -->
-    <div class="eyebrow" style="margin-bottom:18px; color:var(--gold-light);">Закрытое мероприятие</div>
-
-    <!-- title -->
-    <h1 style="font-family:var(--serif-display); font-weight:400; font-size:clamp(30px,5vw,50px); color:var(--ink); line-height:1.2; margin-bottom:30px;">
-      Закрытая презентация премии<br>«Женщина в деле»
-    </h1>
-
-    <!-- BIG DATE CARD -->
-    <div style="display:flex; flex-wrap:wrap; gap:0; margin-bottom:50px; border:1px solid var(--line); overflow:hidden; border-radius:2px;">
-      <div style="background:var(--bg-3); padding:44px 50px; flex:1; min-width:200px; text-align:center;">
-        <div style="font-family:var(--serif-display); font-size:clamp(72px,10vw,108px); color:var(--gold); line-height:1;">2</div>
-        <div style="font-family:var(--sans); font-size:14px; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-dim); margin-top:6px; font-weight:600;">Октября 2026</div>
-      </div>
-      <div style="background:var(--gold); padding:44px 50px; flex:0 0 220px; text-align:center; display:flex; flex-direction:column; justify-content:center; gap:10px;">
-        <div style="font-family:var(--serif-display); font-size:48px; color:var(--ink-dark); line-height:1;">18:00</div>
-        <div style="font-family:var(--sans); font-size:13px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-dark); font-weight:700; opacity:.85;">МКЦ ТПУ</div>
-      </div>
-    </div>
-
-    <!-- DESCRIPTION -->
-    <p style="font-size:17px; color:rgba(242,233,215,.82); line-height:1.8; margin-bottom:20px;">
-      Приглашаем вас на закрытую презентацию ежегодной премии для женщин-предпринимателей <strong style="color:var(--ink);">«Женщина в деле»</strong>. Это первое и главное мероприятие в рамках премии — встреча для тех, кто хочет подать заявку осознанно: узнать всё из первых уст, задать вопросы и познакомиться с организаторами.
-    </p>
-    <p style="font-size:17px; color:rgba(242,233,215,.82); line-height:1.8; margin-bottom:40px;">
-      Участие ограничено — только по предварительной регистрации. Вход бесплатный.
-    </p>
-
-    <!-- PROGRAMME -->
-    <div style="border-top:1px solid var(--line); padding-top:36px; margin-bottom:44px;">
-      <div style="font-family:var(--sans); font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--gold-light); margin-bottom:22px; font-weight:600;">Программа встречи</div>
-      <div style="display:flex; flex-direction:column; gap:0;">
-        <div style="display:flex; align-items:flex-start; gap:20px; padding:18px 0; border-bottom:1px solid var(--line);">
-          <span style="font-family:var(--serif-display); color:var(--gold); font-size:20px; flex-shrink:0; min-width:28px;">1</span>
-          <div>
-            <div style="font-family:var(--serif-alt); font-weight:700; font-size:17px; color:var(--ink); margin-bottom:4px;">Презентация премии «Женщина в деле»</div>
-            <div style="font-size:14.5px; color:rgba(242,233,215,.62);">Все 10 номинаций, Гран-при, критерии оценки и условия участия</div>
-          </div>
-        </div>
-        <div style="display:flex; align-items:flex-start; gap:20px; padding:18px 0; border-bottom:1px solid var(--line);">
-          <span style="font-family:var(--serif-display); color:var(--gold); font-size:20px; flex-shrink:0; min-width:28px;">2</span>
-          <div>
-            <div style="font-family:var(--serif-alt); font-weight:700; font-size:17px; color:var(--ink); margin-bottom:4px;">Анонс фотовыставки «Женщина в деле»</div>
-            <div style="font-size:14.5px; color:rgba(242,233,215,.62);">Проект, который покажет деятельных женщин Томской области: их бизнес, характер и вклад в развитие региона</div>
-          </div>
-        </div>
-        <div style="display:flex; align-items:flex-start; gap:20px; padding:18px 0; border-bottom:1px solid var(--line);">
-          <span style="font-family:var(--serif-display); color:var(--gold); font-size:20px; flex-shrink:0; min-width:28px;">3</span>
-          <div>
-            <div style="font-family:var(--serif-alt); font-weight:700; font-size:17px; color:var(--ink); margin-bottom:4px;">Ответы на вопросы</div>
-            <div style="font-size:14.5px; color:rgba(242,233,215,.62);">Организаторы расскажут всё о процессе подачи заявки и оценки</div>
-          </div>
-        </div>
-        <div style="display:flex; align-items:flex-start; gap:20px; padding:18px 0;">
-          <span style="font-family:var(--serif-display); color:var(--gold); font-size:20px; flex-shrink:0; min-width:28px;">4</span>
-          <div>
-            <div style="font-family:var(--serif-alt); font-weight:700; font-size:17px; color:var(--ink); margin-bottom:4px;">Нетворкинг</div>
-            <div style="font-size:14.5px; color:rgba(242,233,215,.62);">Общение с предпринимательницами и членами комитета в неформальной обстановке</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CTA -->
-    <div style="background:var(--bg-2); border:1px solid var(--line); padding:38px 42px; border-left:3px solid var(--gold); margin-bottom:36px;">
-      <div style="font-family:var(--sans); font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--gold-light); margin-bottom:10px; font-weight:600;">Участие по регистрации</div>
-      <p style="font-size:16px; color:rgba(242,233,215,.72); margin-bottom:22px; line-height:1.7;">Места ограничены. Заполните форму — мы пришлём подтверждение и адрес на почту.</p>
-      <a href="https://forms.yandex.ru/u/6a87349295add51dfbaa8a07/" target="_blank" rel="noopener" class="btn btn-primary">Зарегистрироваться</a>
-    </div>
-
-    <!-- CONTACTS -->
-    <div style="font-family:var(--sans); font-size:13.5px; color:var(--ink-dim); display:flex; flex-direction:column; gap:8px;">
-      <div>Вопросы: <a href="mailto:womencomitettpp70@yandex.ru" style="color:var(--gold-light);">womencomitettpp70@yandex.ru</a> &middot; +7-913-824-09-91</div>
-      <div>Адрес: МКЦ ТПУ, г. Томск</div>
-    </div>
-
-  </div>
-</section>
 
 </div>
 
