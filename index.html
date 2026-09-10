@@ -308,6 +308,39 @@
   @media (max-width:880px){ .video-req-grid{ grid-template-columns:1fr; gap:20px; } }
 
   /* ---------- committee section ---------- */
+  /* ---------- october presentation ---------- */
+  .oct-pres{ padding:100px 0; background:var(--bg-2); position:relative; border-top:1px solid var(--line); border-bottom:1px solid var(--line); overflow:hidden; }
+  .oct-pres-grid{ display:grid; grid-template-columns:1fr; gap:0; align-items:center; max-width:680px; margin:0 auto; }
+  .oct-pres-text .eyebrow{ margin-bottom:18px; }
+  .oct-pres-text h2{ font-family:var(--serif-display); font-weight:400; font-size:clamp(26px,3.4vw,38px); color:var(--ink); margin-bottom:20px; line-height:1.25; }
+  .oct-pres-text p{ color:rgba(242,233,215,.72); font-size:16px; line-height:1.75; margin-bottom:14px; }
+  .oct-date-block{ display:flex; flex-direction:column; gap:0; }
+  .oct-date-top{ background:var(--bg-3); border:1px solid var(--line); padding:38px 44px; text-align:center; }
+  .oct-date-top .day{ font-family:var(--serif-display); font-size:clamp(72px,9vw,100px); color:var(--gold); line-height:1; }
+  .oct-date-top .month-year{ font-family:var(--sans); font-size:13px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-dim); margin-top:6px; font-weight:600; }
+  .oct-date-bottom{ background:var(--gold); padding:18px 44px; text-align:center; }
+  .oct-date-bottom .time-place{ font-family:var(--serif-display); font-size:22px; color:var(--ink-dark); }
+  .oct-date-bottom .venue{ font-family:var(--sans); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-dark); margin-top:4px; font-weight:600; opacity:.8; }
+  @media(max-width:880px){ .oct-pres-grid{ grid-template-columns:1fr; gap:40px; } }
+
+  /* ---------- photo exhibition ---------- */
+  .photo-ex{ padding:100px 0; background:var(--bg); }
+  .photo-ex-grid{ display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start; }
+  .photo-ex-text .eyebrow{ margin-bottom:18px; }
+  .photo-ex-text h2{ font-family:var(--serif-display); font-weight:400; font-size:clamp(26px,3.4vw,38px); color:var(--ink); margin-bottom:20px; line-height:1.25; }
+  .photo-ex-text p{ color:rgba(242,233,215,.72); font-size:16px; line-height:1.75; margin-bottom:14px; }
+  .photo-ex-price{ background:var(--bg-2); border:1px solid var(--line); border-left:3px solid var(--gold); padding:26px 30px; margin-top:28px; }
+  .photo-ex-price .price-label{ font-family:var(--sans); font-size:10px; letter-spacing:.22em; text-transform:uppercase; color:var(--gold-light); margin-bottom:8px; font-weight:600; }
+  .photo-ex-price .price-num{ font-family:var(--serif-display); font-size:34px; color:var(--gold); }
+  .photo-ex-price .price-sub{ font-size:13.5px; color:rgba(242,233,215,.6); margin-top:6px; }
+  .photo-ex-perks{ display:flex; flex-direction:column; gap:0; border-top:1px solid var(--line); }
+  .photo-ex-perk{ display:flex; gap:14px; padding:16px 0; border-bottom:1px solid var(--line); align-items:flex-start; font-size:14.5px; color:rgba(242,233,215,.78); line-height:1.6; }
+  .photo-ex-perk::before{ content:"—"; color:var(--gold); flex-shrink:0; }
+  .photo-ex-date{ margin-top:24px; display:flex; align-items:center; gap:10px; }
+  .photo-ex-date .dot{ width:8px; height:8px; border-radius:50%; background:var(--wine); animation:pulse 1.8s infinite; }
+  .photo-ex-date span{ font-family:var(--sans); font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--gold-light); font-weight:600; }
+  @media(max-width:880px){ .photo-ex-grid{ grid-template-columns:1fr; gap:40px; } }
+
   .committee{ padding:110px 0; background: var(--bg); }
   .committee-grid{ display:grid; grid-template-columns:1fr; gap:0; align-items:center; max-width:760px; margin:0 auto; }
   .committee-text .eyebrow{ margin-bottom:18px; }
@@ -644,9 +677,10 @@
       <a href="javascript:void(0)" onclick="nav('home','noms')">Номинации</a>
       <a href="javascript:void(0)" onclick="nav('home','timeline')">Сроки</a>
       <a href="javascript:void(0)" onclick="nav('home','who')">Условия</a>
+      <a href="javascript:void(0)" onclick="nav('home','oct-pres')">Октябрь</a>
+      <a href="javascript:void(0)" onclick="nav('home','photo-ex')">Фотовыставка</a>
       <a href="javascript:void(0)" onclick="nav('home','video-req')">Видео-визитка</a>
       <a href="javascript:void(0)" onclick="nav('home','committee')">Комитет</a>
-      <a href="javascript:void(0)" onclick="nav('event')">2 октября</a>
       <a href="javascript:void(0)" onclick="nav('polozhenie')">Положение</a>
     </nav>
     <div class="nav-cta">
@@ -858,6 +892,64 @@
     </div>
     <div class="video-important reveal">
       <p><strong>Важно:</strong> видео-визитка является обязательным элементом заявки. Без неё заявка не будет допущена к участию. Ролики финалистов будут показаны на церемонии награждения 19.11.2026 в «Дом культур», Томск.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OCTOBER PRESENTATION ============ -->
+<section class="oct-pres" id="oct-pres">
+  <div class="wrap">
+    <div class="oct-pres-grid">
+      <div class="oct-pres-text reveal">
+        <div class="eyebrow">Скоро</div>
+        <h2>Закрытая презентация премии — уже в октябре</h2>
+        <p>До старта церемонии мы проводим закрытую презентацию для тех, кто хочет подать заявку осознанно. Встреча для предпринимательниц, партнёров и деловых гостей региона — в одном из самых красивых пространств Томска.</p>
+        <p>На встрече: обзор всех 10 номинаций и условий участия, анонс фотовыставки «Женщина в деле», ответы организаторов и нетворкинг с предпринимательницами.</p>
+        <p style="color:rgba(242,233,215,.5); font-size:14px;">Вход по предварительной регистрации — место ограничено.</p>
+        <div style="margin-top:28px;">
+          <a href="https://forms.yandex.ru/u/6a9a4000eb6146596dcfaedd/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Зарегистрироваться</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHOTO EXHIBITION ============ -->
+<section class="photo-ex" id="photo-ex">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-bottom:50px;">
+      <div class="eyebrow center">Фотопроект</div>
+      <h2>Фотовыставка «Женщина в деле»</h2>
+      <p>Проект, который покажет деятельных женщин Томской области — их бизнес, характер и вклад в развитие региона. Выставка откроется на церемонии награждения 19 ноября и станет частью события.</p>
+    </div>
+    <div class="photo-ex-grid">
+      <div class="reveal">
+        <p style="color:rgba(242,233,215,.78); font-size:16px; line-height:1.8; margin-bottom:16px;">Это не просто фотографии. Это истории о том, как женский бизнес меняет регион. Каждый портрет — отдельная история силы, характера и профессионализма.</p>
+        <p style="color:rgba(242,233,215,.78); font-size:16px; line-height:1.8; margin-bottom:16px;">Выставка будет представлена на закрытой презентации в октябре и на торжественной церемонии награждения 19 ноября в «Доме культур».</p>
+        <div class="photo-ex-date">
+          <span class="dot"></span>
+          <span>Первая фотосессия — 19 сентября 2026</span>
+        </div>
+        <p style="margin-top:10px; color:rgba(242,233,215,.5); font-size:13.5px;">Участницы первой сессии попадут на экспозицию уже 8/9 октября — на закрытой презентации премии.</p>
+      </div>
+      <div class="reveal">
+        <div class="photo-ex-price">
+          <div class="price-label">Участие в выставке</div>
+          <div class="price-num">5 000 ₽</div>
+          <div class="price-sub">Профессиональная фотосессия + экспозиция + медиаприсутствие</div>
+        </div>
+        <div class="photo-ex-perks" style="margin-top:22px;">
+          <div class="photo-ex-perk">Профессиональная фотосессия в едином стиле выставки</div>
+          <div class="photo-ex-perk">Ваш портрет на выставке в день церемонии 19 ноября</div>
+          <div class="photo-ex-perk">Снимки в высоком разрешении — ваши навсегда</div>
+          <div class="photo-ex-perk">Публикация вашей истории в соцсетях Комитета и ТПП</div>
+          <div class="photo-ex-perk">Упоминание в пресс-релизах и медиаматериалах о выставке</div>
+          <div class="photo-ex-perk">Статус участницы фотовыставки и премии в едином инфополе</div>
+        </div>
+        <div style="margin-top:24px;">
+          <a href="tel:+79138240991" class="btn btn-primary btn-sm">Записаться на съёмку</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
