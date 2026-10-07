@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Кристина Байдали — Группа компаний Потапыч</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,560;1,9..144,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#111111;--ink-deep:#000000;--paper:#F0EDE8;--paper-dim:#8A8580;--accent:#FFFFFF;--hairline:rgba(240,237,232,0.12)}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{-webkit-text-size-adjust:100%;}
+body{background:var(--ink);color:var(--paper);font-family:'Inter',sans-serif;line-height:1.5;overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,64px);}
+.mark{padding:clamp(24px,4vw,40px) 0;font-family:'Fraunces',serif;font-size:1rem;letter-spacing:0.02em;color:var(--paper-dim);}
+.mark span{color:var(--paper);}
+.hero{display:grid;grid-template-columns:1.05fr 0.95fr;align-items:stretch;min-height:calc(100vh - 90px);}
+.hero-copy{display:flex;flex-direction:column;justify-content:center;padding:clamp(12px,4vw,0px) clamp(20px,5vw,0px);}
+.hero-copy .lede{font-size:clamp(1rem,1.3vw,1.15rem);color:var(--paper-dim);max-width:32ch;margin-bottom:clamp(20px,3vw,28px);}
+.hero-copy h1{font-family:'Fraunces',serif;font-weight:560;font-size:clamp(2.6rem,5.6vw,4.4rem);line-height:1.04;}
+.hero-copy h1 em{font-style:italic;color:var(--accent);}
+.hero-rule{width:64px;height:1px;background:var(--paper-dim);margin:clamp(24px,3vw,32px) 0;border:none;}
+.hero-role{font-size:0.95rem;color:var(--paper-dim);line-height:1.7;max-width:36ch;}
+.hero-photo{position:relative;min-height:52vh;display:flex;align-items:center;justify-content:center;background:var(--ink-deep);}
+.hero-photo::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:var(--hairline);}
+.photo-placeholder{display:flex;align-items:center;justify-content:center;width:100%;height:100%;min-height:400px;color:var(--paper-dim);font-family:'Fraunces',serif;font-size:1.2rem;letter-spacing:0.05em;}
+.awards{border-top:1px solid var(--hairline);padding:clamp(40px,6vw,72px) 0;}
+.awards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:clamp(24px,3vw,40px);}
+.award{border-left:1px solid var(--hairline);padding-left:20px;}
+.award-year{font-size:0.78rem;letter-spacing:0.08em;color:var(--paper-dim);margin-bottom:6px;}
+.award-name{font-family:'Fraunces',serif;font-size:1.05rem;line-height:1.35;}
+.projects{padding:clamp(40px,6vw,72px) 0;border-top:1px solid var(--hairline);}
+.section-label{font-size:0.78rem;letter-spacing:0.1em;color:var(--paper-dim);margin-bottom:clamp(28px,4vw,48px);}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2px;}
+.project{background:#1a1a1a;padding:clamp(24px,3vw,36px);display:flex;flex-direction:column;gap:16px;transition:background .2s;}
+.project:hover{background:#222;}
+.project-num{font-size:0.75rem;color:var(--paper-dim);letter-spacing:0.06em;}
+.project-name{font-family:'Fraunces',serif;font-size:1.25rem;line-height:1.3;}
+.project-desc{font-size:0.88rem;color:var(--paper-dim);line-height:1.6;flex:1;}
+.project-link{font-size:0.82rem;letter-spacing:0.04em;border-bottom:1px solid var(--hairline);padding-bottom:2px;align-self:flex-start;transition:border-color .2s;}
+.project:hover .project-link{border-color:var(--paper-dim);}
+.contacts{padding:clamp(40px,6vw,72px) 0;border-top:1px solid var(--hairline);}
+.contacts-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,64px);}
+.contact-group h3{font-family:'Fraunces',serif;font-size:1.1rem;margin-bottom:16px;}
+.contact-item{display:flex;flex-direction:column;gap:2px;margin-bottom:14px;}
+.contact-label{font-size:0.75rem;letter-spacing:0.07em;color:var(--paper-dim);}
+.contact-val{font-size:0.95rem;}
+.contact-val a:hover{text-decoration:underline;}
+footer{border-top:1px solid var(--hairline);padding:clamp(24px,3vw,36px) 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+.footer-name{font-family:'Fraunces',serif;font-size:1rem;}
+.footer-note{font-size:0.78rem;color:var(--paper-dim);}
+@media(max-width:700px){
+.hero{grid-template-columns:1fr;}
+.hero-photo{min-height:320px;order:-1;}
+.hero-photo::before{display:none;}
+.contacts-grid{grid-template-columns:1fr;}
+footer{flex-direction:column;align-items:flex-start;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="mark">Комитет70 · <span>Женщина в деле</span></div>
+</div>
+<div class="wrap">
+<section class="hero">
+<div class="hero-copy">
+<p class="lede">Серийный предприниматель · Томск</p>
+<h1>Кристина<br><em>Байдали</em></h1>
+<hr class="hero-rule">
+<p class="hero-role">Основатель фабрики ростовых кукол Потапыч · Председатель Комитета по развитию женского предпринимательства ТПП Томской области · Ментор · Автор книги «Потапыч и друзья»</p>
+</div>
+<div class="hero-photo">
+<div class="photo-placeholder">фото</div>
+</div>
+</section>
+</div>
+<div class="wrap">
+<section class="awards">
+<p class="section-label">НАГРАДЫ</p>
+<div class="awards-grid">
+<div class="award"><div class="award-year">2026</div><div class="award-name">Любимый малый бизнес — Сбербанк</div></div>
+<div class="award"><div class="award-year">2025</div><div class="award-name">Лауреат «Золотой Меркурий»</div></div>
+<div class="award"><div class="award-year">2025</div><div class="award-name">Победитель WIN-WIN WOMEN</div></div>
+<div class="award"><div class="award-year">2023</div><div class="award-name">Бренд №1 — Top Luxury Awards</div></div>
+<div class="award"><div class="award-year">2022</div><div class="award-name">Женщина года</div></div>
+</div>
+</section>
+<section class="projects">
+<p class="section-label">ПРОЕКТЫ</p>
+<div class="projects-grid">
+<div class="project">
+<div class="project-num">01</div>
+<div class="project-name">Фабрика Потапыч</div>
+<div class="project-desc">Топ-5 производителей ростовых кукол России. 12 лет в бизнесе. Клиенты в 40 странах и 650 городах. Офисы в Сербии и Турции.</div>
+<a class="project-link" href="https://potapych.com" target="_blank">potapych.com →</a>
+</div>
+<div class="project">
+<div class="project-num">02</div>
+<div class="project-name">Подкаст «Женщина в деле»</div>
+<div class="project-desc">Истории предпринимательниц, которые меняют бизнес и среду вокруг себя.</div>
+<a class="project-link" href="https://t.me/baidalikristina" target="_blank">Telegram →</a>
+</div>
+<div class="project">
+<div class="project-num">03</div>
+<div class="project-name">Наставничество</div>
+<div class="project-desc">Личное наставничество для предпринимателей в сфере праздников и событийного бизнеса.</div>
+<a class="project-link" href="https://t.me/plush_millioner" target="_blank">Записаться →</a>
+</div>
+<div class="project">
+<div class="project-num">04</div>
+<div class="project-name">Книга «Потапыч и друзья»</div>
+<div class="project-desc">Детская книга об отважном медведе — первый предпринимательский герой для маленьких читателей.</div>
+<a class="project-link" href="https://vk.ru/baidalikris" target="_blank">VK →</a>
+</div>
+</div>
+</section>
+<section class="contacts">
+<p class="section-label">КОНТАКТЫ</p>
+<div class="contacts-grid">
+<div class="contact-group">
+<h3>Записаться на консультацию</h3>
+<div class="contact-item"><span class="contact-label">ТЕЛЕФОН</span><span class="contact-val"><a href="tel:+79138240991">+7 913 824-09-91</a></span></div>
+<div
