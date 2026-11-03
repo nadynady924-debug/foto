@@ -365,6 +365,14 @@
   .quote { font-family:'Cormorant Garamond',serif; font-style:italic; font-size: clamp(24px,3vw,34px); line-height:1.4; color:var(--white); max-width: 860px; margin-top: 48px; }
   .quote em { color: var(--gold); }
   @media (max-width: 900px) { .help-grid { grid-template-columns: 1fr; } .help-item p { font-size: 21px; } }
+
+  .award-badge span { white-space: nowrap; }
+  @media (max-width: 900px) {
+    .award-badge { padding: 8px 12px; gap: 6px; max-width: 100%; }
+    .award-badge span { font-size: 8.5px; letter-spacing: 1px; }
+    .stats-inner { grid-template-columns: 1fr; gap: 28px; }
+    .stat-num { font-size: 40px; }
+  }
 </style>
 </head>
 <body>
@@ -393,10 +401,10 @@
 
 <div class="stats-bar">
   <div class="stats-inner">
-    <div><div class="stat-num">Кибернетика</div><div class="stat-label">системное<br>мышление</div></div>
     <div><div class="stat-num">Психология</div><div class="stat-label">понимание глубинных<br>процессов человека</div></div>
-    <div><div class="stat-num">Реклама</div><div class="stat-label">умение<br>доносить смыслы</div></div>
     <div><div class="stat-num">Беатотерапия</div><div class="stat-label">навык выбирать<br>счастье</div></div>
+    <div><div class="stat-num">Кибернетика</div><div class="stat-label">системное<br>мышление</div></div>
+    <div><div class="stat-num">Реклама</div><div class="stat-label">умение<br>доносить смыслы</div></div>
   </div>
 </div>
 
@@ -421,14 +429,14 @@
       <h3>Кабинет психолога Анастасии Левченко</h3>
       <ul>
         <li><b>Практикующий психолог.</b> База классической психологии, работа с запросами любой сложности.</li>
-        <li><b>Беатотерапевт.</b> Специалист по работе с телесными блоками и психосоматикой через призму ресурсного состояния и раскрытия потенциала.</li>
-        <li><b>ДПДГ-терапевт.</b> Сертифицированный специалист по методу Десенсибилизации и Переработки Движением Глаз (EMDR).</li>
+        <li><b>Беатотерапевт.</b> Беатотерапия — психотерапия счастья. Создаю условия для перемен, раскрытия потенциала, повышения качества жизни человека. Перемены измеряются в конкретных параметрах (кг, кв. м, руб.).</li>
+        <li><b>ДПДГ-терапевт.</b> Создаю условия для переработки травмы психикой. Прошлое теряет власть. Депрессия, тревога, апатия уходят, возвращаются выбор и опора.</li>
         <li><b>Результат.</b> Комплексное воздействие на проблему — от нейрофизиологии до телесных ощущений.</li>
       </ul>
       <p class="address">Томск, ул. Советская, 84</p>
       <div class="links-row">
         <a href="https://vk.ru/a_levchenko_beatoterapevt" target="_blank" class="link-btn primary">ВКонтакте</a>
-        <a href="https://2gis.ru/tomsk/geo/70000001111229795" target="_blank" class="link-btn">2ГИС</a>
+        <a href="https://2gis.ru/tomsk/geo/70000001111229795" target="_blank" class="link-btn">2ГИС · Отзывы</a>
       </div>
     </div>
 
@@ -467,8 +475,11 @@
       <a href="https://vk.ru/a_levchenko_beatoterapevt" target="_blank" class="social-item">
         <div class="social-info"><span>ВКонтакте</span><strong>a_levchenko_beatoterapevt</strong></div>
       </a>
-      <a href="https://t.me/+d_CiD1R8ej03MmJi" target="_blank" class="social-item">
-        <div class="social-info"><span>Telegram</span><strong>Клуб «Беатум»</strong></div>
+      <a href="https://max.ru/u/f9LHodD0cOLBqj4xuDNmKOUV5kHR8n9Chphos-1WdlBU2_gf_NE2xv9WdKU" target="_blank" class="social-item">
+        <div class="social-info"><span>MAX</span><strong>Написать в MAX</strong></div>
+      </a>
+      <a href="mailto:Nova26@list.ru" class="social-item">
+        <div class="social-info"><span>Почта</span><strong>Nova26@list.ru</strong></div>
       </a>
       <a href="https://2gis.ru/tomsk/geo/70000001111229795" target="_blank" class="social-item">
         <div class="social-info"><span>2ГИС</span><strong>Кабинет психолога · ул. Советская, 84</strong></div>
