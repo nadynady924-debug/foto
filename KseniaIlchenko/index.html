@@ -366,19 +366,26 @@
   .quote em { color: var(--gold); }
   @media (max-width: 900px) { .help-grid { grid-template-columns: 1fr; } .help-item p { font-size: 21px; } }
 
+
+  p, h2, h3, .stat-label { text-wrap: pretty; }
+
+  @media (max-width: 900px) {
+    .stats-inner { grid-template-columns: 1fr; gap: 28px; }
+    .stat-num { font-size: 40px; }
+  }
 </style>
 </head>
 <body>
 
 <div class="hero">
   <div class="hero-left">
-    <div class="award-badge"><span>Основатель и директор Первого Экскурсионного Бюро</span></div>
+    <div class="award-badge"><span>Основатель и директор Первого Экскурсионного Бюро</span></div>
     <h1>Ксения<br>Ильченко</h1>
-    <p class="subtitle">Туроператор по внутреннему туризму · Томск</p>
+    <p class="subtitle">Туроператор по внутреннему туризму · Томск</p>
     <div class="divider-gold"></div>
     <p class="bio">
-      Я томичка и люблю свой город. Моё дело начиналось с мечты: <strong>чтобы Томск стал туристическим городом.</strong>
-      Чтобы сюда приезжали целыми поездами, а экскурсия по городу была любимым и доступным видом отдыха.
+      Я томичка и люблю свой город. Моё дело начиналось с мечты: <strong>чтобы Томск стал туристическим городом.</strong>
+      Чтобы сюда приезжали целыми поездами, а экскурсия по городу была любимым и доступным видом отдыха.
     </p>
     <div class="awards-row">
       <span class="award-pill">Внутренний туризм</span>
@@ -387,7 +394,7 @@
       <span class="award-pill">Взрослым</span>
     </div>
     <div class="links-row">
-      <a href="https://1peb.ru" target="_blank" class="link-btn primary">Сайт бюро</a>
+      <a href="https://1peb.ru" target="_blank" class="link-btn primary">Сайт ПЭБ</a>
       <a href="https://t.me/pebtomsk1" target="_blank" class="link-btn">Telegram</a>
     </div>
   </div>
@@ -399,68 +406,68 @@
 <div class="stats-bar">
   <div class="stats-inner">
     <div><div class="stat-num">Сотни тысяч</div><div class="stat-label">счастливых<br>детей-экскурсантов</div></div>
-    <div><div class="stat-num">«Всё включено»</div><div class="stat-label">путешествия в Томск<br>из других городов</div></div>
-    <div><div class="stat-num">Школьникам</div><div class="stat-label">экскурсии с пользой<br>и удовольствием</div></div>
-    <div><div class="stat-num">Взрослым</div><div class="stat-label">идеальные маршруты<br>по Томску</div></div>
+    <div><div class="stat-num">«Всё включено»</div><div class="stat-label">путешествия в Томск<br>из других городов</div></div>
+    <div><div class="stat-num">Школьникам</div><div class="stat-label">экскурсии с пользой<br>и удовольствием</div></div>
+    <div><div class="stat-num">Взрослым</div><div class="stat-label">идеальные маршруты<br>по Томску</div></div>
   </div>
 </div>
 
 <section>
-  <p class="section-label">Проекты и направления</p>
+  <p class="section-label">Проекты и направления</p>
   <h2>Первое <em>Экскурсионное Бюро</em></h2>
-  <p class="section-lead">Туроператор по внутреннему туризму. Показываем Томск так, чтобы в него хотелось возвращаться — гостям города, школьникам и самим томичам.</p>
+  <p class="section-lead">Туроператор по внутреннему туризму. Показываем Томск так, чтобы в него хотелось возвращаться — гостям города, школьникам и самим томичам.</p>
   <div class="projects-grid">
 
     <div class="project-card dir-card">
       <div class="card-label">Направление 01</div>
       <h3>Проект «Вагон знаний»</h3>
-      <p>Путешествие в Томск из других городов по принципу «всё включено».</p>
+      <p>Путешествие в Томск из других городов по принципу «всё включено».</p>
       <div class="links-row">
-        <a href="https://1peb.ru" target="_blank" class="link-btn primary">Подробнее на сайте</a>
+        <a href="https://1peb.ru" target="_blank" class="link-btn primary">Подробнее на сайте</a>
       </div>
     </div>
 
     <div class="project-card dir-card">
       <div class="card-label">Направление 02</div>
-      <h3>Экскурсии для школьников</h3>
-      <p>Сотни тысяч счастливых детей-экскурсантов! И ещё больше довольных родителей — ребёнок провёл время с пользой и удовольствием.</p>
+      <h3>Экскурсии для школьников</h3>
+      <p>Сотни тысяч счастливых детей-экскурсантов! И ещё больше довольных родителей — ребёнок провёл время с пользой и удовольствием.</p>
       <div class="links-row">
-        <a href="https://1peb.ru" target="_blank" class="link-btn primary">Подробнее на сайте</a>
+        <a href="https://1peb.ru" target="_blank" class="link-btn primary">Подробнее на сайте</a>
       </div>
     </div>
 
     <div class="project-card dir-card">
       <div class="card-label">Направление 03</div>
-      <h3>Экскурсии для взрослых</h3>
-      <p>Знаем идеальные маршруты для взрослых групп, приезжих, путешественников и томичей, которые хотят узнать о своём городе больше.</p>
+      <h3>Экскурсии для взрослых</h3>
+      <p>Знаем идеальные маршруты для взрослых групп, приезжих, путешественников и томичей, которые хотят открыть больше о Томске.</p>
       <div class="links-row">
-        <a href="https://1peb.ru" target="_blank" class="link-btn primary">Подробнее на сайте</a>
+        <a href="https://1peb.ru" target="_blank" class="link-btn primary">Подробнее на сайте</a>
       </div>
     </div>
 
   </div>
-  <p class="quote">Чтобы в Томск приезжали <em>целыми поездами.</em></p>
+  <p class="quote">Моя мечта — чтобы в Томск приезжали <em>целыми поездами.</em></p>
 </section>
 
 <section>
   <p class="section-label">Контакты</p>
   <div class="contacts-hero">
     <div class="contacts-left">
-      <h2>Связаться<br><em>с бюро</em></h2>
-      <p>Подберём экскурсию для класса, группы или семьи и организуем путешествие в Томск из вашего города.</p>
+      <h2>Связаться<br><em>с ПЭБ</em></h2>
+      <p>Подберём экскурсию для класса, группы или семьи и организуем путешествие в Томск из вашего города.</p>
     </div>
     <div class="social-list">
       <a href="https://1peb.ru" target="_blank" class="social-item"><div class="social-info"><span>Сайт</span><strong>1peb.ru</strong></div></a>
       <a href="https://vk.ru/1gidtomsk" target="_blank" class="social-item"><div class="social-info"><span>ВКонтакте</span><strong>vk.ru/1gidtomsk</strong></div></a>
       <a href="https://t.me/pebtomsk1" target="_blank" class="social-item"><div class="social-info"><span>Telegram</span><strong>@pebtomsk1</strong></div></a>
-      <a href="https://max.ru/join/V8UKusnFwKCwptu0uG3x7IGCKAPIf740AorGq-upuh8" target="_blank" class="social-item"><div class="social-info"><span>MAX</span><strong>Чат Первого Экскурсионного Бюро</strong></div></a>
+      <a href="https://max.ru/join/V8UKusnFwKCwptu0uG3x7IGCKAPIf740AorGq-upuh8" target="_blank" class="social-item"><div class="social-info"><span>MAX</span><strong>Чат Первого Экскурсионного Бюро</strong></div></a>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="footer-brand">Ксения Ильченко · Первое Экскурсионное Бюро</div>
-  <div class="footer-note">Туроператор по внутреннему туризму. Томск.</div>
+  <div class="footer-note">Туроператор по внутреннему туризму. Томск.</div>
 </footer>
 
 </body>
