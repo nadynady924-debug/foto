@@ -375,6 +375,8 @@
   .triad h3 { font-family:'Cormorant Garamond',serif; font-size: 24px; font-weight: 400; color: var(--white); margin-bottom: 12px; }
   .triad p { font-size: 13px; line-height: 1.7; color: rgba(245,240,232,0.6); font-weight: 300; }
   @media (max-width: 900px) { .triad { grid-template-columns: 1fr; } .triad div { border-right:none; border-bottom: 1px solid rgba(201,168,76,0.2); } .triad div:last-child { border-bottom:none; } }
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 900px) { .grid-2 { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -413,33 +415,116 @@
 </section>
 
 <section>
-  <p class="section-label">Студия массажа и психотерапии</p>
-  <h2>«Свободное <em>тело»</em></h2>
-  <div class="projects-grid">
-    <div class="project-card"><div class="card-num">01</div><h3>Психологические консультации</h3><p class="ph">Формат, длительность, стоимость</p></div>
-    <div class="project-card"><div class="card-num">02</div><h3>Телесная терапия</h3><p class="ph">Формат, длительность, стоимость</p></div>
-    <div class="project-card"><div class="card-num">03</div><h3>Массаж</h3><p class="ph">Виды массажа, длительность, стоимость</p></div>
+  <p class="section-label">Индивидуальная работа</p>
+  <h2>Приём <em>интегративного психолога</em></h2>
+  <p class="section-lead">Надежда работает с запросом человека на четырёх уровнях — <strong style="color:#fff;font-weight:500">тело, энергия, подсознание и разум</strong> — и даёт быстрый устойчивый результат. Приём индивидуально и в групповом формате.</p>
+  <div class="projects-grid grid-2">
+    <div class="project-card dir-card">
+      <div class="card-num">01</div>
+      <h3>Телесно-ориентированная терапия</h3>
+      <p>Направление, которое отражает истинную силу и способности Надежды. Работа с психикой через тело — подходит тем, кому сложно говорить о своих чувствах. Помогает выявить истинные причины эмоционального состояния и прожить эти чувства, вернуть контакт со своей чувственной частью и телом. Очень бережная работа.</p>
+      <ul>
+        <li><b>Первый сеанс — 4500 ₽</b><br>2 часа, включает диагностику</li>
+        <li><b>Последующие — 4500 ₽</b><br>1,5 часа</li>
+      </ul>
+    </div>
+    <div class="project-card dir-card">
+      <div class="card-num">02</div>
+      <h3>ДПДГ — работа с травмой, ПТСР</h3>
+      <p>Во время стресса или травмы некоторые воспоминания записываются не в долгосрочную память, а в краткосрочную — и человек проживает прошлое как настоящее: повторяющиеся сценарии, срабатывание триггеров. Мы восстанавливаем фрагменты памяти и перезаписываем их в долгосрочную. Человек начинает по-здоровому реагировать на то, что происходит здесь и сейчас.</p>
+      <ul><li><b>60 мин — 2500 ₽</b></li></ul>
+    </div>
+    <div class="project-card dir-card">
+      <div class="card-num">03</div>
+      <h3>Системные семейные расстановки</h3>
+      <p>Помогают выявить скрытые динамики в семейной системе, увидеть свои истинные базовые настройки, активировать и начать проявлять их в жизни. Тем самым человек возвращает себе свою жизнь.</p>
+      <ul><li><b>60 мин — 2500 ₽</b></li></ul>
+    </div>
+    <div class="project-card dir-card">
+      <div class="card-num">04</div>
+      <h3>Терапия горя и утрат</h3>
+      <p>Помогает прожить боль потери и вернуть себе жизненную энергию и интерес к жизни.</p>
+      <ul><li><b>60 мин — 2500 ₽</b></li></ul>
+    </div>
   </div>
 </section>
 
 <section>
-  <p class="section-label">Запись</p>
+  <div class="b2b">
+    <p class="section-label">Групповая работа</p>
+    <h2>Групповые <em>расстановки</em></h2>
+    <p>Каждую среду, 18:30–21:30. Индивидуальный разбор запроса через расстановку и динамическое упражнение для всех участников.</p>
+    <div class="help-grid">
+      <div class="help-item"><span>Клиент с запросом</span><p>2000 ₽</p></div>
+      <div class="help-item"><span>Заместитель</span><p>500 ₽</p></div>
+    </div>
+    <div class="links-row">
+      <a href="tel:+79528801889" class="link-btn primary">Записаться: +7 (952) 880-18-89</a>
+      <a href="https://t.me/svobodnoe_telo" target="_blank" class="link-btn">Telegram студии</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="section-label">Обучение и наставничество</p>
+  <h2>Передаю <em>свой опыт</em></h2>
+  <div class="help-grid">
+    <div class="help-item">
+      <span>Обучение</span>
+      <p>Авторская методика по массажу — оздоровительный и висцеральный</p>
+      <p style="margin-top:14px">Телесно-ориентированная терапия — 3 ступени</p>
+    </div>
+    <div class="help-item">
+      <span>Наставничество</span>
+      <p>Индивидуальное сопровождение специалистов</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="section-label">Контакты студии</p>
   <div class="contacts-hero">
     <div class="contacts-left">
-      <h2>Записаться<br><em>к Надежде</em></h2>
-      <p>Студия «Свободное тело», Томск. <span class="ph">адрес</span></p>
+      <h2>Студия<br><em>«Свободное тело»</em></h2>
+      <p><a href="https://yandex.ru/maps/?text=%D0%A2%D0%BE%D0%BC%D1%81%D0%BA%2C%20%D0%BF%D1%80.%20%D0%A4%D1%80%D1%83%D0%BD%D0%B7%D0%B5%2C%20103" target="_blank" style="color:inherit">Томск, пр. Фрунзе, 103, БЦ «Красное Знамя», 4 этаж, каб. 405</a></p>
+      <div class="links-row">
+        <a href="tel:+79528801889" class="link-btn primary">+7 (952) 880-18-89</a>
+        <a href="https://yandex.ru/maps/?text=%D0%A2%D0%BE%D0%BC%D1%81%D0%BA%2C%20%D0%BF%D1%80.%20%D0%A4%D1%80%D1%83%D0%BD%D0%B7%D0%B5%2C%20103" target="_blank" class="link-btn">Как добраться</a>
+      </div>
     </div>
     <div class="social-list">
-      <a href="#" class="social-item"><div class="social-info"><span>Telegram / MAX</span><strong class="ph">ссылка</strong></div></a>
-      <a href="#" class="social-item"><div class="social-info"><span>ВКонтакте</span><strong class="ph">ссылка</strong></div></a>
-      <a href="#" class="social-item"><div class="social-info"><span>Телефон / 2ГИС</span><strong class="ph">ссылка</strong></div></a>
+      <a href="https://t.me/svobodnoe_telo" target="_blank" class="social-item"><div class="social-info"><span>Telegram</span><strong>t.me/svobodnoe_telo</strong></div></a>
+      <a href="https://max.ru/channel_Svobodnoe_telo_tomsk" target="_blank" class="social-item"><div class="social-info"><span>MAX</span><strong>Свободное тело · Томск</strong></div></a>
+      <a href="https://vk.ru/club236098019" target="_blank" class="social-item"><div class="social-info"><span>ВКонтакте</span><strong>vk.ru/club236098019</strong></div></a>
+      <a href="https://www.instagram.com/svobodnoetelo_tsk" target="_blank" class="social-item"><div class="social-info"><span>Instagram*</span><strong>@svobodnoetelo_tsk</strong></div></a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="section-label">Личный контакт</p>
+  <div class="contacts-hero">
+    <div class="contacts-left">
+      <h2>Написать<br><em>Надежде</em></h2>
+      <p>Запись на индивидуальный приём, групповые расстановки, обучение и наставничество.</p>
+      <div class="links-row">
+        <a href="tel:+79528077580" class="link-btn primary">+7 (952) 807-75-80</a>
+        <a href="tel:+79528801989" class="link-btn">+7 (952) 880-19-89</a>
+      </div>
+    </div>
+    <div class="social-list">
+      <a href="https://t.me/NADEZDAKRUCHININA" target="_blank" class="social-item"><div class="social-info"><span>Telegram</span><strong>@NADEZDAKRUCHININA</strong></div></a>
+      <a href="https://wa.me/79528801889" target="_blank" class="social-item"><div class="social-info"><span>WhatsApp</span><strong>+7 (952) 880-18-89</strong></div></a>
+      <a href="https://max.ru/u/f9LHodD0cOIxy0wymQmu3AO41vF3_0lAvXDG-4jPhIDzSOv_X9loQ7EFfMc" target="_blank" class="social-item"><div class="social-info"><span>MAX</span><strong>Надежда Кручинина</strong></div></a>
+      <a href="https://vk.ru/nadezdakruchinina" target="_blank" class="social-item"><div class="social-info"><span>ВКонтакте</span><strong>vk.ru/nadezdakruchinina</strong></div></a>
+      <a href="https://www.instagram.com/nadezhda_kruch" target="_blank" class="social-item"><div class="social-info"><span>Instagram*</span><strong>@nadezhda_kruch</strong></div></a>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="footer-brand">Надежда Кручинина · «Свободное тело»</div>
-  <div class="footer-note">Студия массажа и психотерапии. Томск.</div>
+  <div class="footer-note">Студия массажа и психотерапии. Томск.<br>* Instagram — социальная сеть, признана нежелательной организацией на территории Российской Федерации. Ссылки приведены исключительно для международной аудитории.</div>
 </footer>
 
 </body>
