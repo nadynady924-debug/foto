@@ -245,6 +245,12 @@
   .card-num { font-family:'Cormorant Garamond',serif; font-style:italic; font-size:30px; color:var(--gold); margin-bottom:12px; }
   .links-row { display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
   @media (max-width: 900px) { .grid-2 { grid-template-columns: 1fr; } }
+  html { scroll-behavior: smooth; }
+  .pill-link { text-decoration:none; cursor:pointer; transition: all .25s; }
+  .pill-link::after { content:' ↓'; opacity:.7; }
+  .pill-link:hover { background: var(--gold); border-color: var(--gold); color: var(--navy); }
+  .dir-card { scroll-margin-top: 24px; }
+  .dir-card:target { border-color: var(--gold); background: rgba(201,168,76,0.08); }
 </style>
 </head>
 <body>
@@ -258,9 +264,10 @@
       <p class="bio">Предприниматель с 30-летним стажем и соруководитель технического магазина «Антенное поле». Региональный лидер сообщества «Х10 Движение», экс-региональный представитель «PRO Женщин» в Томске. Меценат и создательница семейного арт-пространства Сергея и Галины Агей «ПРОСНЕГОВИК» — открытой среды для социальных инициатив, бизнес-коллабораций и проявления творчества. Дипломированный эстетический коуч и инструктор НейроГрафики, помогающий кратно масштабировать бизнес через сильные окружения и работу с мышлением.</p>
       <div class="awards-row">
         <span class="award-pill">30 лет в бизнесе</span>
-        <span class="award-pill">НейроГрафика</span>
-        <span class="award-pill">ПРОСНЕГОВИК</span>
-        <span class="award-pill">Х10 Движение</span>
+        <a href="#shop" class="award-pill pill-link">Антенное поле</a>
+        <a href="#neuro" class="award-pill pill-link">НейроГрафика</a>
+        <a href="#prosnegovik" class="award-pill pill-link">ПРОСНЕГОВИК</a>
+        <a href="#x10" class="award-pill pill-link">Х10 Движение</a>
       </div>
       <div class="hero-cta"><a href="tel:+79095392951" class="cta-btn">Связаться с Галиной</a></div>
       <p class="cta-note">+7 909 539-29-51 · <a href="https://vk.ru/galina_agei" target="_blank" style="color:var(--gold-light)">ВКонтакте</a></p>
@@ -277,7 +284,7 @@
   <h2>Бизнес, мышление <em>и сообщество</em></h2>
   <div class="projects-grid grid-2">
 
-    <div class="project-card dir-card">
+    <div class="project-card dir-card" id="shop">
       <div class="card-num">01</div>
       <h3>Технический магазин «Антенное поле»</h3>
       <p>Специализированный магазин-салон в Томске. Продажа, подбор и профессиональный монтаж антенного оборудования и комплектующих. Официальный дилер спутникового и цифрового телевидения. 20 лет опыта в сфере технических решений для дома и бизнеса.</p>
@@ -289,11 +296,12 @@
       </ul>
       <div class="links-row">
         <a href="tel:+73822560349" class="link-btn primary">Связаться с магазином</a>
+        <a href="https://vk.ru/id623447517" target="_blank" class="link-btn">Написать в ВК</a>
         <a href="mailto:anten@list.ru" class="link-btn">Написать на почту</a>
       </div>
     </div>
 
-    <div class="project-card dir-card">
+    <div class="project-card dir-card" id="neuro">
       <div class="card-num">02</div>
       <h3>Дипломированный инструктор НейроГрафики</h3>
       <p>Практики масштабирования бизнес-стратегий и личностного роста через работу с мышлением. Эстетический коучинг, моделирование бизнес-задач и снятие внутренних ограничений по научно обоснованным методикам.</p>
@@ -307,7 +315,7 @@
       </div>
     </div>
 
-    <div class="project-card dir-card">
+    <div class="project-card dir-card" id="prosnegovik">
       <div class="card-num">03</div>
       <h3>Аренда семейного арт-пространства «ПРОСНЕГОВИК»</h3>
       <p>Творческое арт-пространство Сергея и Галины Агей. Оборудованная площадка для проведения бизнес-встреч, лекций, мастер-классов, тематических игр, творческих вечеров и семейных мероприятий.</p>
@@ -323,7 +331,7 @@
       </div>
     </div>
 
-    <div class="project-card dir-card">
+    <div class="project-card dir-card" id="x10">
       <div class="card-num">04</div>
       <h3>Меценатская деятельность и «Х10 Движение»</h3>
       <p>Развитие предпринимательской экосистемы и поддержка социальных инициатив в регионе. Деятельность направлена на создание среды для открытого обмена опытом, синергии и кратного роста лидеров — как мужчин, так и женщин.</p>
